@@ -29,7 +29,6 @@ const AddForm = () => {
 	const handleCategory = (category) => {
 		setCategory(category);
 		setCategoryOpen(false);
-		console.log(category);
 	};
 
 	const handleSubmit = () => {

@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import "./topfold.css";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { searchExpense } from "./../../redux/action/expenses";
 
 const TopFold = () => {
 	const [query, setquery] = useState("");
+	const dispatch = useDispatch();
 	const handleQuery = (event) => {
 		setquery(event.target.value);
+		dispatch(searchExpense(event.target.value));
 	};
 	return (
 		<div className="topfold">
@@ -22,7 +26,7 @@ const TopFold = () => {
 					</div>
 					<Link to="/add-expense">
 						<div className="add-button">
-							<i className="devicon-doctrine-plain"></i>
+							<i className="fas fa-plus"></i>
 							<label>Add</label>
 						</div>
 					</Link>
