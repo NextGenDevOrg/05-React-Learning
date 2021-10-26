@@ -4,7 +4,6 @@ import "react-toastify/dist/ReactToastify.css";
 import "./add-form.css";
 import { toast, ToastContainer } from "react-toastify";
 import { useDispatch } from "react-redux";
-// import { addExpense } from "../../redux/actions/expenses";
 import { addExpense } from "./../../redux/action/expenses";
 import SuccessModal from "./success-modal";
 
