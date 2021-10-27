@@ -8,3 +8,15 @@
 
   border-radius: 15px;
 }
+
+.no-expenses {
+  font-size: 1.7rem;
+  text-align: center;
+
+  margin: 2rem;
+  padding: 1rem;
+
+  background-color: gray;
+
+  border-radius: 15px;
+}
