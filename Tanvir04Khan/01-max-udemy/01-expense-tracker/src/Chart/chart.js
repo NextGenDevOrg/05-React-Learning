@@ -5,8 +5,8 @@ import "./Chart.css";
 function Chart(props) {
   const datas = props.data.map(({ amount, date }) => {
     return {
-      amount: amount,
-      date: date,
+      amount,
+      date,
     };
   });
 
