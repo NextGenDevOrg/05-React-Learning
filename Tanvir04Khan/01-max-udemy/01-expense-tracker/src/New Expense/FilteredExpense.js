@@ -1,6 +1,8 @@
 import "./FilteredExpense.css";
 
 function FilteredExpense(props) {
+  const years = ["All", "2019", "2020", "2021", "2022"];
+
   function yearSelected(event) {
     props.userSelectedYear(event.target.value);
   }
@@ -9,11 +11,9 @@ function FilteredExpense(props) {
     <div className="filtered-expense">
       <h3>Filtered by year</h3>
       <select value={props.value} name="year" onChange={yearSelected}>
-        <option>All</option>
-        <option>2019</option>
-        <option>2020</option>
-        <option>2021</option>
-        <option>2022</option>
+        {years.map((year, ind) => (
+          <option key={ind}>{year}</option>
+        ))}
       </select>
     </div>
   );
