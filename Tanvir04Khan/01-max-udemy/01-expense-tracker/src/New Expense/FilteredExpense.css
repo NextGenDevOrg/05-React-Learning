@@ -6,7 +6,7 @@
   margin: 0.5rem;
   padding: 0.5rem;
 
-  background-color: darkgray;
+  background: darkgray;
 
   border-radius: 15px;
   border: 2px white solid;
@@ -23,7 +23,7 @@
   font-size: 1.3rem;
   text-align: center;
 
-  background-color: violet;
+  background: violet;
 
   border: 2px black solid;
   border-radius: 15px;

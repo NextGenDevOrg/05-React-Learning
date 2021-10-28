@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Expenses from "./components/Expenses";
 import NewExpenses from "./New Expense/NewExpenses";
-// import Chart from "./Chart/chart";
+
 
 const expenses = [
   {
