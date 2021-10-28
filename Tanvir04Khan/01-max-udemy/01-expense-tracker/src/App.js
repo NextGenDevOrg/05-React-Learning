@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Expenses from "./components/Expenses";
 import NewExpenses from "./New Expense/NewExpenses";
 
-
 const expenses = [
   {
     id: 1,
@@ -49,7 +48,7 @@ function App() {
       setFilteredExpenses(newExpenses);
     } else {
       setFilteredExpenses(
-        newExpenses.filter((data) => data.date.getFullYear() === +newYear)
+        newExpenses.filter(({ date }) => date.getFullYear() === +newYear)
       );
     }
   }
