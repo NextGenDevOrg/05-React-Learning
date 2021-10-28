@@ -3,10 +3,10 @@ import ProgressBar from "./ProgressBar";
 import "./Chart.css";
 
 function Chart(props) {
-  const datas = props.data.map((data) => {
+  const datas = props.data.map(({ amount, date }) => {
     return {
-      amount: data.amount,
-      date: data.date,
+      amount: amount,
+      date: date,
     };
   });
 
