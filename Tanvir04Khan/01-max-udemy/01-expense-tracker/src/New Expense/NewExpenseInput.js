@@ -4,7 +4,7 @@ import "./NewExpenseInput.css";
 
 function NewExpenseInput(props) {
   const [titleVal, setTitleVal] = useState("");
-  const [amaountVal, setAmountVal] = useState("");
+  const [amaountVal, setAmountVal] = useState(0);
   const [dateVal, setDateVal] = useState("");
 
   function titleInputHandler(event) {
