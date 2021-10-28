@@ -1,17 +1,15 @@
-// import React, { useState } from "react";
-
 import ExpenseItem from "./ExpenseItem";
 import FilteredExpense from "../New Expense/FilteredExpense";
 import Chart from "../Chart/chart";
 
 import "./Expenses.css";
 
-const Expenses = (props) => {
+const Expenses = ({ data, getSelectedYear }) => {
   function userSelectedYear(newYear) {
-    props.getSelectedYear(newYear);
+    getSelectedYear(newYear);
   }
 
-  if (!props.data.length) {
+  if (!data.length) {
     return (
       <div className="main-content">
         <FilteredExpense value="2022" userSelectedYear={userSelectedYear} />
@@ -21,10 +19,10 @@ const Expenses = (props) => {
   } else {
     return (
       <div>
-        <Chart data={props.data} />
+        <Chart data={data} />
         <div className="main-content">
           <FilteredExpense userSelectedYear={userSelectedYear} />
-          {props.data.map((item) => (
+          {data.map((item) => (
             <ExpenseItem {...item} key={item.id} />
           ))}
         </div>
