@@ -12,7 +12,7 @@ function NewExpenseInput(props) {
   }
 
   function amountInputHandler(event) {
-    setAmountVal(event.target.value);
+    setAmountVal(+event.target.value);
   }
 
   function dateInputHandler(event) {
