@@ -35,7 +35,6 @@ function Chart(props) {
   const valuesArray = months.map((month) => month.value);
   const maxValue = Math.max(...valuesArray);
 
-  console.log(maxValue);
   return (
     <div className="bars">
       {months.map((month, ind) => (
