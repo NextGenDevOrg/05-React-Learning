@@ -1,0 +1,57 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+  width: 50%;
+  height: 150px;
+
+  margin: 0.5em auto;
+  padding: 0.5em;
+
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background: linear-gradient(45deg, black, white);
+
+  color: aliceblue;
+
+  border-radius: 15px;
+
+  z-index: 10;
+}
+
+.dlt-modal-btn {
+  display: flex;
+}
+
+.dlt-modal-btn button {
+  width: 10em;
+  height: 2.3em;
+
+  margin: 2em;
+
+  background: darkcyan;
+
+  border-radius: 10px;
+}
+
+.dlt-modal-btn button:hover {
+  background: cyan;
+
+  transition: 0.5s;
+}

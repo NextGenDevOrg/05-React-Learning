@@ -1,0 +1,18 @@
+.nodata {
+  max-width: 50%;
+  height: 10%;
+
+  margin: 0.5em auto;
+  padding: 0.5em;
+
+  font-size: 1.7em;
+  text-align: center;
+
+  background: linear-gradient(45deg, black, transparent);
+
+  color: aliceblue;
+
+  box-shadow: 2px 2px 5px 5px gray;
+
+  border-radius: 15px;
+}

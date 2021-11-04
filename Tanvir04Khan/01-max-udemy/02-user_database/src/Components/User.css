@@ -1,0 +1,21 @@
+.user {
+  max-width: 50%;
+  height: 1em;
+
+  margin: 0.5em auto;
+  padding: 0.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 1.5em;
+  font-weight: 600;
+  color: aliceblue;
+
+  background: linear-gradient(45deg, black, transparent);
+
+  box-shadow: 2px 2px 5px 5px gray;
+
+  border-radius: 15px;
+}
