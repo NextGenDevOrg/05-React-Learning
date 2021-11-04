@@ -1,0 +1,26 @@
+.user-input label {
+  margin: 1em;
+  padding: 0.5em;
+
+  color: aliceblue;
+
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.user-input input {
+  margin: 1em;
+  padding: 0.3em;
+
+  font-weight: 400;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

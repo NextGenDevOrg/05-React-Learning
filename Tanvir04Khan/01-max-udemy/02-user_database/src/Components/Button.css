@@ -1,0 +1,20 @@
+.button {
+  width: 25%;
+  height: 17%;
+
+  background: darkcyan;
+
+  border-radius: 10px;
+}
+
+.button:hover {
+  background: cyan;
+
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    width: 100%;
+  }
+}
