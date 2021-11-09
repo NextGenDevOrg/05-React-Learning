@@ -14,7 +14,7 @@ const HomePage = ({ authentication }) => {
     <Fragment>
       <HomeHeader onLoggedout={LogoutBtnHandler} />
       <Card>
-        Welcome Back!
+        <h1> Welcome Back! </h1>
         <button onClick={LogoutBtnHandler}>Logout</button>
       </Card>
     </Fragment>
