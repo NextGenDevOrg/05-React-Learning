@@ -20,8 +20,8 @@ function App() {
 
   return (
     <div className="App">
-      {!isLoggedIn && <LoginPage isLoggedin={authentication} />}
-      {isLoggedIn && <HomePage isLoggedin={authentication} />}
+      {!isLoggedIn && <LoginPage authentication={authentication} />}
+      {isLoggedIn && <HomePage authentication={authentication} />}
     </div>
   );
 }

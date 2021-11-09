@@ -5,9 +5,9 @@ import Card from "../UI/Card";
 
 import "./HomePage.css";
 
-const HomePage = ({ isLoggedin }) => {
+const HomePage = ({ authentication }) => {
   const LogoutBtnHandler = () => {
-    isLoggedin(false);
+    authentication(false);
     localStorage.removeItem("isLoggedIn");
   };
   return (

@@ -23,7 +23,7 @@ const passwordReducer = (state, action) => {
   return { value: "", isValid: false };
 };
 
-const LoginPage = ({ isLoggedin }) => {
+const LoginPage = ({ authentication }) => {
   const [enteredEmail, dispatchEmail] = useReducer(emailReducer, {
     value: "",
     isValid: false,
@@ -57,7 +57,7 @@ const LoginPage = ({ isLoggedin }) => {
   const loginHandler = (event) => {
     event.preventDefault();
     if (formIsValid) {
-      isLoggedin(true);
+      authentication(true);
       localStorage.setItem("isLoggedIn", "1");
     }
   };
