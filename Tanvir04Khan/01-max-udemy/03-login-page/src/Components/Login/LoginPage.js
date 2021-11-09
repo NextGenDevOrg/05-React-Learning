@@ -58,7 +58,7 @@ const LoginPage = ({ authentication }) => {
     event.preventDefault();
     if (formIsValid) {
       authentication(true);
-      localStorage.setItem("isLoggedIn", "1");
+      localStorage.setItem("isLoggedIn", true);
     }
   };
 
