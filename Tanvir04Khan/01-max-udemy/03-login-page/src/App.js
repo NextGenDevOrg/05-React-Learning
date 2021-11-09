@@ -14,14 +14,14 @@ function App() {
     }
   }, []);
 
-  const isloggedin = (boolean) => {
-    setIsLoggedIn(boolean);
+  const authentication = (isUserLoggedIn) => {
+    setIsLoggedIn(isUserLoggedIn);
   };
 
   return (
     <div className="App">
-      {!isLoggedIn && <LoginPage isLoggedin={isloggedin} />}
-      {isLoggedIn && <HomePage isLoggedin={isloggedin} />}
+      {!isLoggedIn && <LoginPage isLoggedin={authentication} />}
+      {isLoggedIn && <HomePage isLoggedin={authentication} />}
     </div>
   );
 }
