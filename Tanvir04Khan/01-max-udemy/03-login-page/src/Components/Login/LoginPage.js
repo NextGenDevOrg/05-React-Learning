@@ -89,9 +89,7 @@ const LoginPage = ({ authentication }) => {
                 : {}
             }
           />
-          <button type="submit" style={{ margin: "1.5rem" }}>
-            Login
-          </button>
+          <button type="submit">Login</button>
         </form>
       </Card>
     </Fragment>

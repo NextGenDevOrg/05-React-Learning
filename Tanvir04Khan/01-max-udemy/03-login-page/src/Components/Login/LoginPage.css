@@ -2,7 +2,3 @@
   display: flex;
   flex-direction: column;
 }
-
-.login-form button {
-  margin: 2rem;
-}
