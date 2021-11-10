@@ -23,7 +23,7 @@ const passwordReducer = (state, action) => {
   return { value: "", isValid: false };
 };
 
-const LoginPage = ({ authentication }) => {
+const LoginPage = ({ onAuthenticate }) => {
   const [enteredEmail, dispatchEmail] = useReducer(emailReducer, {
     value: "",
     isValid: false,
@@ -33,12 +33,12 @@ const LoginPage = ({ authentication }) => {
     isValid: false,
   });
 
-  const [formIsValid, setFormIsValid] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
 
   useEffect(() => {
     const identifier = setTimeout(() => {
       console.log("checking form validation!");
-      setFormIsValid(enteredEmail.isValid && enteredPassword.isValid);
+      setIsFormValid(enteredEmail.isValid && enteredPassword.isValid);
 
       return () => {
         clearTimeout(identifier);
@@ -56,8 +56,8 @@ const LoginPage = ({ authentication }) => {
 
   const loginHandler = (event) => {
     event.preventDefault();
-    if (formIsValid) {
-      authentication(true);
+    if (isFormValid) {
+      onAuthenticate(true);
       localStorage.setItem("isLoggedIn", true);
     }
   };

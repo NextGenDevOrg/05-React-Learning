@@ -5,17 +5,17 @@ import Card from "../UI/Card";
 
 import "./HomePage.css";
 
-const HomePage = ({ authentication }) => {
-  const LogoutBtnHandler = () => {
-    authentication(false);
+const HomePage = ({ onAuthenticate }) => {
+  const logoutBtnHandler = () => {
+    onAuthenticate(false);
     localStorage.removeItem("isLoggedIn");
   };
   return (
     <Fragment>
-      <HomeHeader onLoggedout={LogoutBtnHandler} />
+      <HomeHeader onLoggingout={logoutBtnHandler} />
       <Card>
         <h1> Welcome Back! </h1>
-        <button onClick={LogoutBtnHandler}>Logout</button>
+        <button onClick={logoutBtnHandler}>Logout</button>
       </Card>
     </Fragment>
   );
