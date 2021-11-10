@@ -12,7 +12,7 @@ const HomePage = ({ onAuthenticate }) => {
   };
   return (
     <Fragment>
-      <HomeHeader onLoggingout={handelLogout} />
+      <HomeHeader onLogout={handelLogout} />
       <Card>
         <h1> Welcome Back! </h1>
         <button onClick={handelLogout}>Logout</button>
