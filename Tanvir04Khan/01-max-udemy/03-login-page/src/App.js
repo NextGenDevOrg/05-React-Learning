@@ -14,16 +14,14 @@ function App() {
     }
   }, []);
 
-  const authenticatingIsUserLoggedIn = (isUserLoggedIn) => {
+  const handleAuthentication = (isUserLoggedIn) => {
     setIsLoggedIn(isUserLoggedIn);
   };
 
   return (
     <div className="App">
-      {!isLoggedIn && (
-        <LoginPage onAuthenticate={authenticatingIsUserLoggedIn} />
-      )}
-      {isLoggedIn && <HomePage onAuthenticate={authenticatingIsUserLoggedIn} />}
+      {!isLoggedIn && <LoginPage onAuthenticate={handleAuthentication} />}
+      {isLoggedIn && <HomePage onAuthenticate={handleAuthentication} />}
     </div>
   );
 }
