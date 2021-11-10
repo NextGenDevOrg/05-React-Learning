@@ -20,8 +20,11 @@ function App() {
 
   return (
     <div className="App">
-      {!isLoggedIn && <LoginPage onAuthenticate={handleAuthentication} />}
-      {isLoggedIn && <HomePage onAuthenticate={handleAuthentication} />}
+      {!isLoggedIn ? (
+        <LoginPage onAuthenticate={handleAuthentication} />
+      ) : (
+        <HomePage onAuthenticate={handleAuthentication} />
+      )}
     </div>
   );
 }
