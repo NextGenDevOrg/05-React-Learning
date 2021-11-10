@@ -1,17 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-import Header from "./Components/Login/Header";
+import LoginPage from "./Components/Login/LoginPage";
+import HomePage from "./Components/Home/HomePage";
 
 import "./App.css";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  useEffect(() => {
+    if (localStorage.isLoggedIn) {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
+  const handleAuthentication = (isUserLoggedIn) => {
+    setIsLoggedIn(isUserLoggedIn);
+  };
+
   return (
     <div className="App">
-      <Header />
-      <h1>Helllo There!</h1>
-      {}
+      {!isLoggedIn ? (
+        <LoginPage onAuthenticate={handleAuthentication} />
+      ) : (
+        <HomePage onAuthenticate={handleAuthentication} />
+      )}
     </div>
   );
 }
