@@ -11,7 +11,7 @@ const Header = (props) => {
           <div className="flex items-center justify-center md:justify-between">
             <div>
               <span className="text-2xl font-bold text-gray-800 cursor-pointer dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300">
-                Khan,s Fast Food
+                Khan's Fast Food
               </span>
             </div>
           </div>
