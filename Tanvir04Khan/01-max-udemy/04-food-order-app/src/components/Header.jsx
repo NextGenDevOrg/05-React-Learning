@@ -1,11 +1,11 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import tableFullOfFastFood from "../assets/fast-food-table.jpg";
 import locateMeSymbol from "../assets/location.png";
 
-const Header = (props) => {
+const Header = () => {
   return (
-    <Fragment>
+    <>
       <nav className="bg-white shadow dark:bg-gray-800">
         <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
           <div className="flex items-center justify-center md:justify-between">
@@ -16,7 +16,7 @@ const Header = (props) => {
             </div>
           </div>
 
-          <div className="items-center md:flex">
+          <div className="items-center md:flex anima">
             <div className="flex flex-col items-center md:flex-row md:mx-6">
               <span className="my-1 text-sm font-medium text-gray-700 cursor-pointer dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
                 Home
@@ -79,12 +79,12 @@ const Header = (props) => {
                 alt="Locate me symbol"
                 className="w-4 h-4 m-1"
               />
-              <span>Locate me</span>
+              <span className="font-bold">Locate me</span>
             </div>
           </div>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 };
 
