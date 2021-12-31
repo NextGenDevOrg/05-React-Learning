@@ -6,7 +6,7 @@ const Header = () => {
 		<div className="header-container">
 			<div className="header">
 				<div className="header-logo">
-					xpense Tracker <i class="devicon-gitter-plain colored"></i>
+					xpense Tracker <i className="far fa-credit-card"></i>
 				</div>
 				<div className="header-button">
 					<a
@@ -14,7 +14,7 @@ const Header = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<i class="devicon-github-original"></i>Star
+						<i className="devicon-github-original"></i>Star
 					</a>
 				</div>
 			</div>

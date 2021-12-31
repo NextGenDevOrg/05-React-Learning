@@ -1,10 +1,13 @@
 import React from "react";
+import "./home.css";
+import TopFold from "./../../components/topfold/index";
+import ExpenseList from "../../components/expenseList";
 
 const Home = () => {
 	return (
 		<div className="home">
-			<div>TopFold</div>
-			<div>ExpenseList</div>
+			<TopFold />
+			<ExpenseList />
 		</div>
 	);
 };
